@@ -1,0 +1,172 @@
+:root {
+    --fonte:"Poppins", sans-serif;
+
+    --lilas: #965FD4;
+    --branco: #fff;
+    --fundo: rgb(0, 0, 0);
+}
+
+
+body {
+    background-color: var(--fundo);
+    font-family: var(--fonte);
+}
+
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, rgba(150,95,212,1) 55%, rgba(255,255,255,1) 100%);
+    width: 100%;
+}
+
+.cabecalho {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--lilas);
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--lilas);
+}
+
+.polaroid {
+    display: grid;
+    place-items: center;
+    margin: 2rem 1.5rem;
+}
+
+
+.polaroid-titulo {
+    color: var(--lilas);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+figure {
+    width: 180px;
+    height: 200px;
+    background-color: #eaeaea;
+    padding: 15px 13px 40px 13px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 18px;
+    color: #2c2c2c;
+}
+
+.polaroid-text {
+    text-align: justify;
+    font-size: 14px;
+    color: var(--lilas);
+    font-weight: 200;
+    line-height: 18px;
+    
+}
+
+.musica {
+    margin: 2rem 1.5rem;
+}
+
+.musica-titulo {
+    color: var(--lilas);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.player {
+    background-color: var(--lilas);
+    padding: 15px 15px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 4rem;
+    margin-bottom: 1rem;
+}
+
+.musica-nome {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--branco);
+    margin-bottom: .5rem;
+}
+
+.musica-cantor {
+    font-size: 14px;
+    color: #eaeaea;
+    font-weight: 400;
+}
+.player-foto {
+    width: 84px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.musica-texto {
+    text-align: justify;
+    font-size: 14px;
+    color: var(--lilas);
+    font-weight: 200;
+    line-height: 18px;
+}
+
+.mes {
+    margin: 2rem 1.5rem;
+}
+
+.mes-titulo {
+    color: var(--lilas);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.mes-texto {
+    text-align: justify ;
+    font-size: 14px;
+    color: var(--lilas);
+    font-weight: 200;
+    line-height: 18px;
+}
+
+section span {
+    font-weight: 600;
+}
+
+.coracao {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    animation: coracao .5s infinite alternate linear;
+}
+
+@keyframes coracao {
+    from {
+        transform: scale(.9);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
